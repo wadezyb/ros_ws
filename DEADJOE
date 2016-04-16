@@ -1,0 +1,117 @@
+
+*** These modified files were found in JOE when it aborted on Sat Apr 16 15:12:13 2016
+*** JOE was aborted by UNIX signal 15
+
+*** File '/root/ros_ws/.git/COMMIT_EDITMSG'
+
+yes
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .catkin_workspace
+#	new file:   build/.built_by
+#	new file:   build/CATKIN_IGNORE
+#	new file:   build/CMakeCache.txt
+#	new file:   build/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake
+#	new file:   build/CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake
+#	new file:   build/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_C.bin
+#	new file:   build/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_CXX.bin
+#	new file:   build/CMakeFiles/2.8.12.2/CMakeSystem.cmake
+#	new file:   build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c
+#	new file:   build/CMakeFiles/2.8.12.2/CompilerIdC/a.out
+#	new file:   build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+#	new file:   build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out
+#	new file:   build/CMakeFiles/CMakeDirectoryInformation.cmake
+#	new file:   build/CMakeFiles/CMakeError.log
+#	new file:   build/CMakeFiles/CMakeOutput.log
+#	new file:   build/CMakeFiles/CMakeRuleHashes.txt
+#	new file:   build/CMakeFiles/Makefile.cmake
+#	new file:   build/CMakeFiles/Makefile2
+#	new file:   build/CMakeFiles/TargetDirectories.txt
+#	new file:   build/CMakeFiles/clean_test_results.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/clean_test_results.dir/build.make
+#	new file:   build/CMakeFiles/clean_test_results.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/clean_test_results.dir/progress.make
+#	new file:   build/CMakeFiles/clean_test_results_Project.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/clean_test_results_Project.dir/build.make
+#	new file:   build/CMakeFiles/clean_test_results_Project.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/clean_test_results_Project.dir/progress.make
+#	new file:   build/CMakeFiles/cmake.check_cache
+#	new file:   build/CMakeFiles/download_extra_data.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/download_extra_data.dir/build.make
+#	new file:   build/CMakeFiles/download_extra_data.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/download_extra_data.dir/progress.make
+#	new file:   build/CMakeFiles/doxygen.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/doxygen.dir/build.make
+#	new file:   build/CMakeFiles/doxygen.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/doxygen.dir/progress.make
+#	new file:   build/CMakeFiles/progress.marks
+#	new file:   build/CMakeFiles/run_tests.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/run_tests.dir/build.make
+#	new file:   build/CMakeFiles/run_tests.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/run_tests.dir/progress.make
+#	new file:   build/CMakeFiles/tests.dir/DependInfo.cmake
+#	new file:   build/CMakeFiles/tests.dir/build.make
+#	new file:   build/CMakeFiles/tests.dir/cmake_clean.cmake
+#	new file:   build/CMakeFiles/tests.dir/progress.make
+#	new file:   build/CTestTestfile.cmake
+#	new file:   build/Makefile
+#	new file:   build/catkin/catkin_generated/version/package.cmake
+#	new file:   build/catkin_generated/env_cached.sh
+#	new file:   build/catkin_generated/generate_cached_setup.py
+#	new file:   build/catkin_generated/installspace/.rosinstall
+#	new file:   build/catkin_generated/installspace/_setup_util.py
+#	new file:   build/catkin_generated/installspace/env.sh
+#	new file:   build/catkin_generated/installspace/setup.bash
+#	new file:   build/catkin_generated/installspace/setup.sh
+#	new file:   build/catkin_generated/installspace/setup.zsh
+#	new file:   build/catkin_generated/order_packages.cmake
+#	new file:   build/catkin_generated/order_packages.py
+#	new file:   build/catkin_generated/setup_cached.sh
+#	new file:   build/catkin_generated/stamps/Project/interrogate_setup_dot_py.py.stamp
+#	new file:   build/catkin_generated/stamps/Project/order_packages.cmake.em.stamp
+#	new file:   build/catkin_generated/stamps/Project/package.xml.stamp
+#	new file:   build/catkin_make.cache
+#	new file:   build/cmake_install.cmake
+#	new file:   build/gtest/CMakeFiles/CMakeDirectoryInformation.cmake
+#	new file:   build/gtest/CMakeFiles/gtest.dir/DependInfo.cmake
+#	new file:   build/gtest/CMakeFiles/gtest.dir/build.make
+#	new file:   build/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake
+#	new file:   build/gtest/CMakeFiles/gtest.dir/depend.make
+#	new file:   build/gtest/CMakeFiles/gtest.dir/flags.make
+#	new file:   build/gtest/CMakeFiles/gtest.dir/link.txt
+#	new file:   build/gtest/CMakeFiles/gtest.dir/progress.make
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/build.make
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/depend.make
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/flags.make
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/link.txt
+#	new file:   build/gtest/CMakeFiles/gtest_main.dir/progress.make
+#	new file:   build/gtest/CMakeFiles/progress.marks
+#	new file:   build/gtest/CTestTestfile.cmake
+#	new file:   build/gtest/Makefile
+#	new file:   build/gtest/cmake_install.cmake
+#	new file:   devel/.built_by
+#	new file:   devel/.catkin
+#	new file:   devel/.rosinstall
+#	new file:   devel/_setup_util.py
+#	new file:   devel/env.sh
+#	new file:   devel/setup.bash
+#	new file:   devel/setup.sh
+#	new file:   devel/setup.zsh
+#	new file:   src/CMakeLists.txt
+#
+
+*** File '(Unnamed)'
+securetty
+sshd_config
+auto-serial-console.conf
+auto-serial-console
+eth0
+/root/ros_ws/.git/COMMIT_EDITMSG
