@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "roboserver")
+set(roboserver_MAINTAINER "db <db@todo.todo>")
+set(roboserver_DEPRECATED "")
+set(roboserver_VERSION "0.0.0")
+set(roboserver_BUILD_DEPENDS "roscpp")
+set(roboserver_RUN_DEPENDS "roscpp")
+set(roboserver_BUILDTOOL_DEPENDS "catkin")

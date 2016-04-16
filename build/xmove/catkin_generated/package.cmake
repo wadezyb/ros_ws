@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "xmove")
+set(xmove_MAINTAINER "db <db@todo.todo>")
+set(xmove_DEPRECATED "")
+set(xmove_VERSION "0.0.0")
+set(xmove_BUILD_DEPENDS "roscpp")
+set(xmove_RUN_DEPENDS "roscpp")
+set(xmove_BUILDTOOL_DEPENDS "catkin")

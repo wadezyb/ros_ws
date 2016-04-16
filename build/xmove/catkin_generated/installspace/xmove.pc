@@ -1,0 +1,8 @@
+prefix=/root/ros_ws/install
+
+Name: xmove
+Description: Description of xmove
+Version: 0.0.0
+Cflags: -I/root/ros_ws/install/include
+Libs: -L/root/ros_ws/install/lib -lxmove
+Requires: roscpp
