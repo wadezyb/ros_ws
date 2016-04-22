@@ -72,14 +72,64 @@ roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o.provides: ro
 
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o
 
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o: /root/ros_ws/src/roboserver/src/usb2can.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o -c /root/ros_ws/src/roboserver/src/usb2can.cpp
+
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/usb2can.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/usb2can.cpp > CMakeFiles/roboserver_node.dir/src/usb2can.cpp.i
+
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/usb2can.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/usb2can.cpp -o CMakeFiles/roboserver_node.dir/src/usb2can.cpp.s
+
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.requires
+
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.provides
+
+roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/robolink.cpp.o -c /root/ros_ws/src/roboserver/src/robolink.cpp
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/robolink.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/robolink.cpp > CMakeFiles/roboserver_node.dir/src/robolink.cpp.i
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/robolink.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/robolink.cpp -o CMakeFiles/roboserver_node.dir/src/robolink.cpp.s
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
+
 # Object files for target roboserver_node
 roboserver_node_OBJECTS = \
-"CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o"
+"CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
 
 # External object files for target roboserver_node
 roboserver_node_EXTERNAL_OBJECTS =
 
 /root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
 /root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/build.make
 /root/ros_ws/devel/lib/roboserver/roboserver_node: /opt/ros/jade/lib/libroscpp.so
 /root/ros_ws/devel/lib/roboserver/roboserver_node: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
@@ -107,6 +157,8 @@ roboserver/CMakeFiles/roboserver_node.dir/build: /root/ros_ws/devel/lib/roboserv
 .PHONY : roboserver/CMakeFiles/roboserver_node.dir/build
 
 roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
 .PHONY : roboserver/CMakeFiles/roboserver_node.dir/requires
 
 roboserver/CMakeFiles/roboserver_node.dir/clean:

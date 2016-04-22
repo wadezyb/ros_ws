@@ -331,6 +331,30 @@ std_msgs_generate_messages_py/fast:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/robolink.o: src/robolink.cpp.o
+.PHONY : src/robolink.o
+
+# target to build an object file
+src/robolink.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
+.PHONY : src/robolink.cpp.o
+
+src/robolink.i: src/robolink.cpp.i
+.PHONY : src/robolink.i
+
+# target to preprocess a source file
+src/robolink.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.i
+.PHONY : src/robolink.cpp.i
+
+src/robolink.s: src/robolink.cpp.s
+.PHONY : src/robolink.s
+
+# target to generate assembly for a file
+src/robolink.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.s
+.PHONY : src/robolink.cpp.s
+
 src/roboserver_node.o: src/roboserver_node.cpp.o
 .PHONY : src/roboserver_node.o
 
@@ -354,6 +378,30 @@ src/roboserver_node.s: src/roboserver_node.cpp.s
 src/roboserver_node.cpp.s:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.s
 .PHONY : src/roboserver_node.cpp.s
+
+src/usb2can.o: src/usb2can.cpp.o
+.PHONY : src/usb2can.o
+
+# target to build an object file
+src/usb2can.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o
+.PHONY : src/usb2can.cpp.o
+
+src/usb2can.i: src/usb2can.cpp.i
+.PHONY : src/usb2can.i
+
+# target to preprocess a source file
+src/usb2can.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.i
+.PHONY : src/usb2can.cpp.i
+
+src/usb2can.s: src/usb2can.cpp.s
+.PHONY : src/usb2can.s
+
+# target to generate assembly for a file
+src/usb2can.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.s
+.PHONY : src/usb2can.cpp.s
 
 # Help Target
 help:
@@ -381,9 +429,15 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/robolink.o"
+	@echo "... src/robolink.i"
+	@echo "... src/robolink.s"
 	@echo "... src/roboserver_node.o"
 	@echo "... src/roboserver_node.i"
 	@echo "... src/roboserver_node.s"
+	@echo "... src/usb2can.o"
+	@echo "... src/usb2can.i"
+	@echo "... src/usb2can.s"
 .PHONY : help
 
 

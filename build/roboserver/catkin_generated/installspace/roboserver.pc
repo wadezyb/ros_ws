@@ -3,6 +3,6 @@ prefix=/root/ros_ws/install
 Name: roboserver
 Description: Description of roboserver
 Version: 0.0.0
-Cflags: 
-Libs: -L/root/ros_ws/install/lib 
-Requires: 
+Cflags: -I/root/ros_ws/install/include
+Libs: -L/root/ros_ws/install/lib -lroboserver
+Requires: roscpp

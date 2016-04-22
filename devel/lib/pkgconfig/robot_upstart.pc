@@ -1,0 +1,8 @@
+prefix=/root/ros_ws/devel
+
+Name: robot_upstart
+Description: Description of robot_upstart
+Version: 0.2.0
+Cflags: 
+Libs: -L/root/ros_ws/devel/lib 
+Requires: 
