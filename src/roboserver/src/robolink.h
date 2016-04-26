@@ -35,4 +35,6 @@ void servoOff(void);
 void timerInit(void);
 void sendIPM(short dp1, short dp2, short dp3, short dp4);
 int sendBufSize(void);
+void receiveTask(void);
+void servoHome(void);
 #endif

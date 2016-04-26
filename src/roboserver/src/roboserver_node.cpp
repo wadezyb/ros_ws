@@ -13,6 +13,10 @@
 #include <iostream>
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include <string.h>
+#include "robolink.h"
+#include "robot.h"
+#include "udpserver.h"
 
 using namespace std;
 
@@ -45,34 +49,24 @@ void ethernet_server_task(void)
               printf("ERROR on accept");
          bzero(buffer,256);
          n = read(newsockfd,buffer,255);
-         if (n < 0) printf("printf reading from socket");
-         printf("Here is the message: %x\n",buffer);
+         printf("%s\n",buffer);
+
          n = write(newsockfd,"I got your message",18);
          if (n < 0) printf("printf writing to socket");
          close(newsockfd);
 
      }
      close(sockfd);
-
-
 }
-void ros_node(void)
-{
-	//ros::init(NULL,NULL, "talker");
-	//ros::NodeHandle n;
-	//ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
-	while(1)
-	{
-		sleep(1);
-		ser.Axis[0].currentPos += 1;
-	}
 
-}
 int main(int argc, char **argv)
 {
-
-	boost::thread ethernet_server(&ethernet_server_task);
+//	if(roboLinkInit())
+//		printf("port opened!!\n");
+//	timerInit();
+	boost::thread ethernet_server(&udpServerTask);
+	//boost::thread receiveTaskNode(&receiveTask);
 	ethernet_server.join();
-
+	//receiveTaskNode.join();
 	return 0;
 }

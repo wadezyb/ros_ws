@@ -1,5 +1,6 @@
 #include "robolink.h"
 #include "usb2can.h"
+#include "robot.h"
 #include <signal.h>
 #include <sys/time.h>
 
@@ -21,7 +22,6 @@ typedef struct
 int roboLinkId;
 serialRxObj serialRx;
 canMsgObj canMsg;
-std::queue<canMsgObj> receiveMsgQueue;
 std::queue<sendMsgObj> sendMsgQueue;
 
 /*1 500 000 bps = 150 000 Bytes/s = 150 Bytes/ms */
@@ -58,6 +58,7 @@ void sendCAN(char ID,char Index, int Data)
     msg.id = ID;
     msg.data[0]=Index;
     *(int *)(&(msg.data[1]))=Data;
+    //printf("-%d",msg.data[1]);
     sendMsgQueue.push(msg);
 }
 
@@ -85,12 +86,9 @@ void sendData(void)
 
 void servoOn(void)
 {
-    sendCAN(1,ModesofOperationIndex, 5);
-    sendCAN(2,ModesofOperationIndex, 5);
-    sendCAN(3,ModesofOperationIndex, 5);
-    sendCAN(1,MaxVelocityIndex,200);
-    sendCAN(2,MaxVelocityIndex,200);
-    sendCAN(3,MaxVelocityIndex,200);
+    sendCAN(1,ModesofOperationIndex, 4);
+    sendCAN(2,ModesofOperationIndex, 4);
+    sendCAN(3,ModesofOperationIndex, 4);
     sendCAN(1,ControlWordIndex, 1);
     sendCAN(2,ControlWordIndex, 1);
     sendCAN(3,ControlWordIndex, 1);
@@ -102,6 +100,16 @@ void servoOff(void)
     sendCAN(2,ControlWordIndex, 0);
     sendCAN(3,ControlWordIndex, 0);
 }
+void servoHome(void)
+{
+
+	sendCAN(1,ModesofOperationIndex, 5);
+    sendCAN(2,ModesofOperationIndex, 5);
+    sendCAN(3,ModesofOperationIndex, 5);
+    sendCAN(1,ControlWordIndex, 1);
+    sendCAN(2,ControlWordIndex, 1);
+    sendCAN(3,ControlWordIndex, 1);
+}
 
 
 int sendBufSize(void)
@@ -109,17 +117,42 @@ int sendBufSize(void)
 	return sendMsgQueue.size();
 }
 
+void updateRxMsg(canMsgObj msg)
+{
+	char id = msg.id;
+	char index = msg.data[0];
+	switch(index)
+	{
+	case 54:
+		robot.Axis[id].io_input = msg.data[1];
+		//printf("id is %d,",id);
+		//printf("io is %d\n",robot.Axis[id].io_input);
+		break;
+	case 53:
+		robot.Axis[id].encoder = *(int *)(&msg.data[1]);
+		//printf("id is %d,",id);
+		//printf("enc is %d\n",robot.Axis[id].encoder);
+		break;
+	default: break;
+
+	}
+
+}
+
 void receiveData(void)
 {
 	char buf[200];
 	int k = read(roboLinkId,&buf[0],200);
 	int i=0;
-	char inData;
+	//printf("k\n");
 	for(i=0;i<k;i++)
 	{
+		char inData = buf[i];
+		//printf("m\n");
 		if(inData == 0x55)
 		{
 			serialRx.flag |= 0x01;
+			//printf("head\n");
 		}
 		if((serialRx.flag&0x01) == 0x01)
 		{
@@ -134,14 +167,16 @@ void receiveData(void)
 				/* Check Sum */
 				if(((serialRx.checkSum&0xff)==serialRx.buf[serialRx.buf[1]+6])&&(((serialRx.checkSum&0xff00)>>8)==serialRx.buf[serialRx.buf[1]+7]))
 				{
-					/* If Check Sum OK, then We append the data to CAN Message Queue */
+					/* If Check Sum OK, then We update the data to Robot */
 					canMsg.id=serialRx.buf[5];
 					memcpy(&canMsg.data[0],&serialRx.buf[6],8);
-					receiveMsgQueue.push(canMsg);
+					//printf("%d_%d_%d_%d_%d_%d_%d_%d\n",canMsg.data[0],canMsg.data[1],canMsg.data[2],canMsg.data[3],canMsg.data[4],canMsg.data[5],canMsg.data[6],canMsg.data[7]);
+					updateRxMsg(canMsg);
 				}
 				else
 				{
 					serialRx.error++;
+					printf("checksum error %d\n",serialRx.error);
 				}
 				serialRx.num = 0;
 				serialRx.flag &= ~ 0x01;
@@ -174,4 +209,5 @@ void timerInit(void)
     new_value.it_interval.tv_usec = 1000;
     setitimer(ITIMER_REAL, &new_value, &old_value);
 }
+
 

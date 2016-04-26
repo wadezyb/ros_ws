@@ -3,6 +3,7 @@
 
 roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.cpp
 roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.h
+roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robot.h
 roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/usb2can.h
 
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /opt/ros/jade/include/XmlRpcDecl.h
@@ -62,8 +63,17 @@ roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /opt/ros/ja
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /opt/ros/jade/include/ros/wall_timer_options.h
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /opt/ros/jade/include/rosconsole/macros_generated.h
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /opt/ros/jade/include/std_msgs/String.h
+roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /root/ros_ws/src/roboserver/src/robolink.h
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /root/ros_ws/src/roboserver/src/roboserver.h
 roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /root/ros_ws/src/roboserver/src/roboserver_node.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /root/ros_ws/src/roboserver/src/robot.h
+roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o: /root/ros_ws/src/roboserver/src/udpserver.h
+
+roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o: /root/ros_ws/src/roboserver/src/robot.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o: /root/ros_ws/src/roboserver/src/robot.h
+
+roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.o: /root/ros_ws/src/roboserver/src/udpserver.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.o: /root/ros_ws/src/roboserver/src/udpserver.h
 
 roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o: /root/ros_ws/src/roboserver/src/usb2can.cpp
 roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o: /root/ros_ws/src/roboserver/src/usb2can.h

@@ -2,6 +2,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o"
   "CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o"
   "CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/robot.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/udpserver.cpp.o"
   "/root/ros_ws/devel/lib/roboserver/roboserver_node.pdb"
   "/root/ros_ws/devel/lib/roboserver/roboserver_node"
 )

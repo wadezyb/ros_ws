@@ -379,6 +379,54 @@ src/roboserver_node.cpp.s:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.s
 .PHONY : src/roboserver_node.cpp.s
 
+src/robot.o: src/robot.cpp.o
+.PHONY : src/robot.o
+
+# target to build an object file
+src/robot.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o
+.PHONY : src/robot.cpp.o
+
+src/robot.i: src/robot.cpp.i
+.PHONY : src/robot.i
+
+# target to preprocess a source file
+src/robot.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.i
+.PHONY : src/robot.cpp.i
+
+src/robot.s: src/robot.cpp.s
+.PHONY : src/robot.s
+
+# target to generate assembly for a file
+src/robot.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.s
+.PHONY : src/robot.cpp.s
+
+src/udpserver.o: src/udpserver.cpp.o
+.PHONY : src/udpserver.o
+
+# target to build an object file
+src/udpserver.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.o
+.PHONY : src/udpserver.cpp.o
+
+src/udpserver.i: src/udpserver.cpp.i
+.PHONY : src/udpserver.i
+
+# target to preprocess a source file
+src/udpserver.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.i
+.PHONY : src/udpserver.cpp.i
+
+src/udpserver.s: src/udpserver.cpp.s
+.PHONY : src/udpserver.s
+
+# target to generate assembly for a file
+src/udpserver.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.s
+.PHONY : src/udpserver.cpp.s
+
 src/usb2can.o: src/usb2can.cpp.o
 .PHONY : src/usb2can.o
 
@@ -435,6 +483,12 @@ help:
 	@echo "... src/roboserver_node.o"
 	@echo "... src/roboserver_node.i"
 	@echo "... src/roboserver_node.s"
+	@echo "... src/robot.o"
+	@echo "... src/robot.i"
+	@echo "... src/robot.s"
+	@echo "... src/udpserver.o"
+	@echo "... src/udpserver.i"
+	@echo "... src/udpserver.s"
 	@echo "... src/usb2can.o"
 	@echo "... src/usb2can.i"
 	@echo "... src/usb2can.s"
