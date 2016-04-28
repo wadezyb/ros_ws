@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/root/ros_ws/src/roboserver/src/udpserver.cpp
-udpserver.h
-/root/ros_ws/src/roboserver/src/udpserver.h
+/root/ros_ws/src/roboserver/src/imu.cpp
+imu.h
+/root/ros_ws/src/roboserver/src/imu.h
+usb2serial.h
+/root/ros_ws/src/roboserver/src/usb2serial.h
+boost/thread/thread.hpp
+-
 stdio.h
--
-string.h
--
-stdlib.h
--
-arpa/inet.h
--
-sys/socket.h
--
+/root/ros_ws/src/roboserver/src/stdio.h
 
-/root/ros_ws/src/roboserver/src/udpserver.h
+/root/ros_ws/src/roboserver/src/imu.h
+
+/root/ros_ws/src/roboserver/src/usb2serial.h
 

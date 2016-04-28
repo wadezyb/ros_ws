@@ -37,4 +37,6 @@ void sendIPM(short dp1, short dp2, short dp3, short dp4);
 int sendBufSize(void);
 void receiveTask(void);
 void servoHome(void);
+int udpServerTask(void);
+int serialPortManagementTask(void);
 #endif

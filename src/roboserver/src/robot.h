@@ -11,6 +11,17 @@ typedef struct
 
 typedef struct
 {
+	int status;
+}robotControllerObj;
+
+typedef struct
+{
+
+}roboSensorObj;
+
+typedef struct
+{
+	robotControllerObj Controller;
 	robotAxisObj Axis[NUM_OF_AXIS];
 }robotObj;
 

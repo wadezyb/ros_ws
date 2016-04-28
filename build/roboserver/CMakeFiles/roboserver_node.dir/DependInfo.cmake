@@ -4,11 +4,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/root/ros_ws/src/roboserver/src/imu.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o"
+  "/root/ros_ws/src/roboserver/src/main.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o"
   "/root/ros_ws/src/roboserver/src/robolink.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
-  "/root/ros_ws/src/roboserver/src/roboserver_node.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/roboserver_node.cpp.o"
   "/root/ros_ws/src/roboserver/src/robot.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o"
-  "/root/ros_ws/src/roboserver/src/udpserver.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/udpserver.cpp.o"
-  "/root/ros_ws/src/roboserver/src/usb2can.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/usb2can.cpp.o"
+  "/root/ros_ws/src/roboserver/src/usb2serial.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

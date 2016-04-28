@@ -9,6 +9,7 @@ typedef struct
     double v;
     double a;
 }xMoveObj;
+
 typedef struct
 {
     double R;
@@ -17,11 +18,13 @@ typedef struct
     double v;
     double a;
 }xCircleObj;
+
 typedef struct
 {
     double x;
     double y;
 }xMoveCircleObj;
+
 typedef struct
 {
     double startX;
@@ -33,6 +36,7 @@ typedef struct
     double v;
     double a;
 }xLineObj;
+
 typedef struct
 {
     double x;
@@ -46,6 +50,7 @@ typedef struct
 	double b;
 	double c;
 }xMoveMotorObj;
+
 void xMove(double p, double v, double a,std::queue<xMoveObj> *pqueue);
 void motionTest(int n);
 #endif

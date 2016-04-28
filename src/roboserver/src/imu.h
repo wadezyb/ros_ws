@@ -13,12 +13,14 @@ typedef struct
   char sum;
   int error;
 }serialObj;
+
 typedef struct
 {
     short x;
     short y;
     short z;
 }xyzObj;
+
 typedef struct
 {
     xyzObj acc;
@@ -27,6 +29,7 @@ typedef struct
     xyzObj angle;
     int pressure;
 }imuObject;
+
 void imu_task(void);
 
 
