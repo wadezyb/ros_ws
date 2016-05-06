@@ -7,4 +7,3 @@
 SUBDIRS(gtest)
 SUBDIRS(robot_upstart)
 SUBDIRS(roboserver)
-SUBDIRS(xmove)

@@ -6,6 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/ros_ws/src/roboserver/src/imu.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o"
   "/root/ros_ws/src/roboserver/src/main.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o"
+  "/root/ros_ws/src/roboserver/src/motion.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o"
   "/root/ros_ws/src/roboserver/src/robolink.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
   "/root/ros_ws/src/roboserver/src/robot.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o"
   "/root/ros_ws/src/roboserver/src/usb2serial.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o"

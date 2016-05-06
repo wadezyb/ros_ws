@@ -10,13 +10,13 @@
 /*
  * Serial Port Object Parameters Initialize.
  */
-void serialObjInit( void )
+void serialObjInit( serialObj *serial )
 {
-  serial.start = 0;
-  serial.lastInData = 0;
-  serial.n = 0;
-  serial.sum =(char)(0x88+0xaf);
-  serial.error = 0;
+  serial->start = 0;
+  serial->lastInData = 0;
+  serial->n = 0;
+  serial->sum =(char)(0x88+0xaf);
+  serial->error = 0;
 }
 
 void imu_task(void)
@@ -31,7 +31,7 @@ void imu_task(void)
 	int k=0;
 	serialObj serial;
 	imuObject myimu;
-	serialObjInit();
+	serialObjInit(&serial);
 	fd = serialPortInit(port,115200);
 	if(fd<0)
 		return;

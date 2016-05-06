@@ -591,19 +591,6 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-#=============================================================================
-# Target rules for targets named xmove_imu
-
-# Build rule for target.
-xmove_imu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xmove_imu
-.PHONY : xmove_imu
-
-# fast build rule for target.
-xmove_imu/fast:
-	$(MAKE) -f xmove/CMakeFiles/xmove_imu.dir/build.make xmove/CMakeFiles/xmove_imu.dir/build
-.PHONY : xmove_imu/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -651,7 +638,6 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... xmove_imu"
 .PHONY : help
 
 

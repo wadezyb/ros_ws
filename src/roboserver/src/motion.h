@@ -52,5 +52,5 @@ typedef struct
 }xMoveMotorObj;
 
 void xMove(double p, double v, double a,std::queue<xMoveObj> *pqueue);
-void motionTest(int n);
+void motion_task(void);
 #endif

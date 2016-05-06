@@ -7,6 +7,7 @@ typedef struct
 {
 	char io_input;
 	int encoder;
+	char temperature;
 }robotAxisObj;
 
 typedef struct
@@ -27,4 +28,5 @@ typedef struct
 
 
 extern robotObj robot;
+void roboControlLoop(void);
 #endif

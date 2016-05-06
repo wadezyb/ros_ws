@@ -8,8 +8,13 @@ roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o: /root/ros_ws/src/robose
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/imu.h
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/main.cpp
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/main.h
+roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/motion.h
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/robolink.h
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o: /root/ros_ws/src/roboserver/src/robot.h
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion.h
+roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o: /root/ros_ws/src/roboserver/src/robolink.h
 
 roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.cpp
 roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.h

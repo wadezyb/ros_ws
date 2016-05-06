@@ -43,6 +43,8 @@ int roboLinkInit(void)
 {
 	char port[]="/dev/ttyUSB0";
 	roboLinkId = serialPortInit(port,1500000);
+	if(roboLinkId>0)
+		timerInit();
 	return roboLinkId;
 }
 
@@ -85,6 +87,30 @@ void sendIPM(short dp1, short dp2, short dp3, short dp4)
     *(short *)(&(msg.data[6]))=dp4;
     sendMsgQueue.push(msg);
 }
+
+void sendIPM_Pro(short *dp)
+{
+    sendMsgObj msg1;
+    sendMsgObj msg2;
+    sendMsgObj msg3;
+    sendMsgObj msg4;
+
+    msg1.id=0xaa;
+    msg2.id=0xab;
+    msg3.id=0xac;
+    msg4.id=0xad;
+
+    memcpy(&msg1.data[0],dp,8);
+    memcpy(&msg2.data[0],dp+4,8);
+    memcpy(&msg3.data[0],dp+8,8);
+    memcpy(&msg4.data[0],dp+12,8);
+
+    sendMsgQueue.push(msg1);
+    sendMsgQueue.push(msg2);
+    sendMsgQueue.push(msg3);
+    sendMsgQueue.push(msg4);
+}
+
 
 /* This Function can be called in a 1ms timer update event */
 void sendData(void)
@@ -140,10 +166,9 @@ void updateRxMsg(canMsgObj msg)
 		//printf("id is %d,",id);
 		//printf("io is %d\n",robot.Axis[id].io_input);
 		break;
-	case 53:
+	case HeartBeatIndex:
 		robot.Axis[id].encoder = *(int *)(&msg.data[1]);
-		//printf("id is %d,",id);
-		//printf("enc is %d\n",robot.Axis[id].encoder);
+		robot.Axis[id].temperature = *(char *)(&msg.data[5]);
 		break;
 	default: break;
 

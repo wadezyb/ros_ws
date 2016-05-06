@@ -32,4 +32,3 @@
 /root/ros_ws/build/roboserver/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /root/ros_ws/build/roboserver/CMakeFiles/std_msgs_generate_messages_py.dir
 /root/ros_ws/build/CMakeFiles/tests.dir
-/root/ros_ws/build/xmove/CMakeFiles/xmove_imu.dir

@@ -379,6 +379,30 @@ src/main.cpp.s:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/motion.o: src/motion.cpp.o
+.PHONY : src/motion.o
+
+# target to build an object file
+src/motion.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o
+.PHONY : src/motion.cpp.o
+
+src/motion.i: src/motion.cpp.i
+.PHONY : src/motion.i
+
+# target to preprocess a source file
+src/motion.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.i
+.PHONY : src/motion.cpp.i
+
+src/motion.s: src/motion.cpp.s
+.PHONY : src/motion.s
+
+# target to generate assembly for a file
+src/motion.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.s
+.PHONY : src/motion.cpp.s
+
 src/robolink.o: src/robolink.cpp.o
 .PHONY : src/robolink.o
 
@@ -483,6 +507,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/motion.o"
+	@echo "... src/motion.i"
+	@echo "... src/motion.s"
 	@echo "... src/robolink.o"
 	@echo "... src/robolink.i"
 	@echo "... src/robolink.s"

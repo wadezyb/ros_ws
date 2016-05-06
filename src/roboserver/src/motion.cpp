@@ -1,6 +1,6 @@
 #include "motion.h"
 #include "stdio.h"
-
+#include <boost/thread/thread.hpp>
 
 void xMove(double p, double v, double a,std::queue<xMoveObj> *pqueue)
 {
@@ -155,47 +155,93 @@ void xLine(xLineObj line, std::queue<xMoveLineObj> *pqueue)
 }
 
 
-void motionTest(int n)
+void motion_task(void)
 {
-	float A = 20000;
-	float w = 3.1415926*0.004;
+	float A = 16000;
+	float w = 3.1415926*0.002;
 	int t=0;
 	int out;
 	float a;
 	float b;
-	for(t=0;t<1800;t++)
-	{
-		a = round(A*cos(w*t));
-		b = round(A*cos(w*(t-1)));
-		out = a-b;
-		//printf("out %d\n",out);
-		switch(n)
-		{
-			case 0:
-				sendIPM(out,out/2,0,0);
-				break;
-			case 1:
-				sendIPM(0,out/2,out/3,0);
-				break;
-			case 2:
-				sendIPM(out,0,out/3,0);
-				break;
-			case 3:
-				sendIPM(out,0,0,0);
-				break;
-			case 4:
-				sendIPM(0,out/2,0,0);
-				break;
-			case 5:
-				sendIPM(0,0,out/3,0);
-				break;
-			case 6:
-				sendIPM(out,out/2,out/3,0);
-				break;
-			default :
-				break;
-		}
+	short move_buf[16];
 
+	roboLinkInit();
+
+	/* Set Interpolation Time to 4ms */
+	sendCAN(1,InterpolationTimeIndex, 4);
+	sendCAN(2,InterpolationTimeIndex, 4);
+	sendCAN(3,InterpolationTimeIndex, 4);
+	sendCAN(4,InterpolationTimeIndex, 4);
+	sendCAN(4,InterpolationTimeIndex, 4);
+	sendCAN(6,InterpolationTimeIndex, 4);
+	sendCAN(7,InterpolationTimeIndex, 4);
+	sendCAN(8,InterpolationTimeIndex, 4);
+	sendCAN(9,InterpolationTimeIndex, 4);
+	sendCAN(10,InterpolationTimeIndex, 4);
+	sendCAN(11,InterpolationTimeIndex, 4);
+	sendCAN(12,InterpolationTimeIndex, 4);
+	sendCAN(13,InterpolationTimeIndex, 4);
+
+	/* Set Mode of Operation to Interpolation Mode */
+	sendCAN(1,ModesofOperationIndex, 5);
+	sendCAN(2,ModesofOperationIndex, 5);
+	sendCAN(3,ModesofOperationIndex, 5);
+	sendCAN(4,ModesofOperationIndex, 5);
+	sendCAN(5,ModesofOperationIndex, 5);
+	sendCAN(6,ModesofOperationIndex, 5);
+	sendCAN(7,ModesofOperationIndex, 5);
+	sendCAN(8,ModesofOperationIndex, 5);
+	sendCAN(9,ModesofOperationIndex, 5);
+	sendCAN(10,ModesofOperationIndex, 5);
+	sendCAN(11,ModesofOperationIndex, 5);
+	sendCAN(12,ModesofOperationIndex, 5);
+	sendCAN(13,ModesofOperationIndex, 5);
+
+	/* Servo On All Axis */
+	sendCAN(1,ControlWordIndex, 1);
+	sendCAN(2,ControlWordIndex, 1);
+	sendCAN(3,ControlWordIndex, 1);
+	sendCAN(4,ControlWordIndex, 1);
+	sendCAN(5,ControlWordIndex, 1);
+	sendCAN(6,ControlWordIndex, 1);
+	sendCAN(7,ControlWordIndex, 1);
+	sendCAN(8,ControlWordIndex, 1);
+	sendCAN(9,ControlWordIndex, 1);
+	sendCAN(10,ControlWordIndex, 1);
+	sendCAN(11,ControlWordIndex, 1);
+	sendCAN(12,ControlWordIndex, 1);
+	sendCAN(13,ControlWordIndex, 1);
+
+	for(;;)
+	{
+		boost::this_thread::sleep(boost::posix_time::milliseconds(1000));
+		for(t=0;t<1000;t++)
+		{
+			a = round(A*cos(w*t));
+			b = round(A*cos(w*(t-1)));
+			out = a-b;
+
+			//printf("out %d\n",out);
+			move_buf[0]=out;
+			move_buf[1]=out;
+			move_buf[2]=out;
+			move_buf[3]=out;
+			move_buf[4]=out;
+			move_buf[5]=out;
+			move_buf[6]=out;
+			move_buf[7]=out;
+			move_buf[8]=out;
+			move_buf[9]=out;
+			move_buf[10]=out;
+			move_buf[11]=out;
+			move_buf[12]=out;
+			move_buf[13]=out;
+			move_buf[14]=out;
+			move_buf[15]=out;
+
+			sendIPM_Pro(move_buf);
+		}
 	}
+
 }
 
