@@ -6,8 +6,7 @@
 
 int main(int argc, char **argv)
 {
-	boost::thread test(&task_management_process);
-	test.join();
-
+	boost::thread task(&task_management_process);
+	task.join();
 	return 0;
 }
