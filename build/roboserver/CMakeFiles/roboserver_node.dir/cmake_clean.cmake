@@ -1,10 +1,11 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/roboserver_node.dir/src/main.cpp.o"
-  "CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o"
-  "CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
-  "CMakeFiles/roboserver_node.dir/src/robot.cpp.o"
-  "CMakeFiles/roboserver_node.dir/src/imu.cpp.o"
-  "CMakeFiles/roboserver_node.dir/src/motion.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/task/task.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o"
+  "CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o"
   "/root/ros_ws/devel/lib/roboserver/roboserver_node.pdb"
   "/root/ros_ws/devel/lib/roboserver/roboserver_node"
 )

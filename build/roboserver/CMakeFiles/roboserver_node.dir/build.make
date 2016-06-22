@@ -72,139 +72,164 @@ roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o.provides: roboserver/CM
 
 roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o: /root/ros_ws/src/roboserver/src/usb2serial.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o: /root/ros_ws/src/roboserver/src/task/task.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o -c /root/ros_ws/src/roboserver/src/usb2serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/task/task.cpp.o -c /root/ros_ws/src/roboserver/src/task/task.cpp
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.i"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/usb2serial.cpp > CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.i
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/task/task.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/task/task.cpp > CMakeFiles/roboserver_node.dir/src/task/task.cpp.i
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.s"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/usb2serial.cpp -o CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.s
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/task/task.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/task/task.cpp -o CMakeFiles/roboserver_node.dir/src/task/task.cpp.s
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.requires:
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.requires
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.requires
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.provides.build
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.provides
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.provides
 
-roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o
+roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o: /root/ros_ws/src/roboserver/src/robolink.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o: /root/ros_ws/src/roboserver/src/link/usb2serial.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/robolink.cpp.o -c /root/ros_ws/src/roboserver/src/robolink.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o -c /root/ros_ws/src/roboserver/src/link/usb2serial.cpp
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/robolink.cpp.i"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/robolink.cpp > CMakeFiles/roboserver_node.dir/src/robolink.cpp.i
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/link/usb2serial.cpp > CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.i
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/robolink.cpp.s"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/robolink.cpp -o CMakeFiles/roboserver_node.dir/src/robolink.cpp.s
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/link/usb2serial.cpp -o CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.s
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires:
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.requires
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides.build
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.provides
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
+roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o: /root/ros_ws/src/roboserver/src/robot.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o: /root/ros_ws/src/roboserver/src/link/robolink.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/robot.cpp.o -c /root/ros_ws/src/roboserver/src/robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o -c /root/ros_ws/src/roboserver/src/link/robolink.cpp
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/robot.cpp.i"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/robot.cpp > CMakeFiles/roboserver_node.dir/src/robot.cpp.i
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/link/robolink.cpp > CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.i
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/robot.cpp.s"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/robot.cpp -o CMakeFiles/roboserver_node.dir/src/robot.cpp.s
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/link/robolink.cpp -o CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.s
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.requires:
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.requires
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.requires
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.provides.build
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.provides
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.provides
 
-roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o
+roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o: /root/ros_ws/src/roboserver/src/imu.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o: /root/ros_ws/src/roboserver/src/task/robot.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/imu.cpp.o -c /root/ros_ws/src/roboserver/src/imu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o -c /root/ros_ws/src/roboserver/src/task/robot.cpp
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/imu.cpp.i"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/imu.cpp > CMakeFiles/roboserver_node.dir/src/imu.cpp.i
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/task/robot.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/task/robot.cpp > CMakeFiles/roboserver_node.dir/src/task/robot.cpp.i
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/imu.cpp.s"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/imu.cpp -o CMakeFiles/roboserver_node.dir/src/imu.cpp.s
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/task/robot.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/task/robot.cpp -o CMakeFiles/roboserver_node.dir/src/task/robot.cpp.s
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.requires:
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.requires
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.requires
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.provides.build
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.provides
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.provides
 
-roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o
+roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion.cpp
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o: /root/ros_ws/src/roboserver/src/sensor/imu.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/motion.cpp.o -c /root/ros_ws/src/roboserver/src/motion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o -c /root/ros_ws/src/roboserver/src/sensor/imu.cpp
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/motion.cpp.i"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/motion.cpp > CMakeFiles/roboserver_node.dir/src/motion.cpp.i
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/sensor/imu.cpp > CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.i
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/motion.cpp.s"
-	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/motion.cpp -o CMakeFiles/roboserver_node.dir/src/motion.cpp.s
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/sensor/imu.cpp -o CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.s
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.requires:
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.requires
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.requires
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.provides.build
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.provides
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.provides
 
-roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o
+roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o: roboserver/CMakeFiles/roboserver_node.dir/flags.make
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion/motion.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o -c /root/ros_ws/src/roboserver/src/motion/motion.cpp
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/motion/motion.cpp > CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.i
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/motion/motion.cpp -o CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.s
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.requires
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.provides: roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.provides
+
+roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.provides.build: roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o
 
 # Object files for target roboserver_node
 roboserver_node_OBJECTS = \
 "CMakeFiles/roboserver_node.dir/src/main.cpp.o" \
-"CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o" \
-"CMakeFiles/roboserver_node.dir/src/robolink.cpp.o" \
-"CMakeFiles/roboserver_node.dir/src/robot.cpp.o" \
-"CMakeFiles/roboserver_node.dir/src/imu.cpp.o" \
-"CMakeFiles/roboserver_node.dir/src/motion.cpp.o"
+"CMakeFiles/roboserver_node.dir/src/task/task.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o" \
+"CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o"
 
 # External object files for target roboserver_node
 roboserver_node_EXTERNAL_OBJECTS =
 
 /root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o
-/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o
-/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
-/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o
-/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o
-/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o
+/root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o
 /root/ros_ws/devel/lib/roboserver/roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/build.make
 /root/ros_ws/devel/lib/roboserver/roboserver_node: /opt/ros/jade/lib/libroscpp.so
 /root/ros_ws/devel/lib/roboserver/roboserver_node: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
@@ -232,11 +257,12 @@ roboserver/CMakeFiles/roboserver_node.dir/build: /root/ros_ws/devel/lib/roboserv
 .PHONY : roboserver/CMakeFiles/roboserver_node.dir/build
 
 roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o.requires
-roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o.requires
-roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o.requires
-roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o.requires
-roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o.requires
-roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/task/task.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/link/usb2serial.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/link/robolink.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/task/robot.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/sensor/imu.cpp.o.requires
+roboserver/CMakeFiles/roboserver_node.dir/requires: roboserver/CMakeFiles/roboserver_node.dir/src/motion/motion.cpp.o.requires
 .PHONY : roboserver/CMakeFiles/roboserver_node.dir/requires
 
 roboserver/CMakeFiles/roboserver_node.dir/clean:

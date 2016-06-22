@@ -10,7 +10,6 @@
 /root/ros_ws/build/CMakeFiles/doxygen.dir
 /root/ros_ws/build/gtest/CMakeFiles/gtest.dir
 /root/ros_ws/build/gtest/CMakeFiles/gtest_main.dir
-/root/ros_ws/build/roboserver/CMakeFiles/roboserver_node.dir
 /root/ros_ws/build/roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir
 /root/ros_ws/build/roboserver/CMakeFiles/roscpp_generate_messages_eus.dir
 /root/ros_ws/build/roboserver/CMakeFiles/roscpp_generate_messages_lisp.dir
@@ -27,6 +26,7 @@
 /root/ros_ws/build/robot_upstart/CMakeFiles/run_tests_robot_upstart_nosetests_test.dir
 /root/ros_ws/build/robot_upstart/CMakeFiles/run_tests_robot_upstart_roslint.dir
 /root/ros_ws/build/robot_upstart/CMakeFiles/run_tests_robot_upstart_roslint_package.dir
+/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir
 /root/ros_ws/build/roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /root/ros_ws/build/roboserver/CMakeFiles/std_msgs_generate_messages_eus.dir
 /root/ros_ws/build/roboserver/CMakeFiles/std_msgs_generate_messages_lisp.dir

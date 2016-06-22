@@ -150,20 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-roboserver/CMakeFiles/roboserver_node.dir/rule:
-	cd /root/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/roboserver_node.dir/rule
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/rule
-
-# Convenience name for target.
-roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/rule
-.PHONY : roboserver_node
-
-# fast build rule for target.
-roboserver_node/fast:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/build
-.PHONY : roboserver_node/fast
-
-# Convenience name for target.
 roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /root/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -276,6 +262,20 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+roboserver/CMakeFiles/server_node.dir/rule:
+	cd /root/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/server_node.dir/rule
+.PHONY : roboserver/CMakeFiles/server_node.dir/rule
+
+# Convenience name for target.
+server_node: roboserver/CMakeFiles/server_node.dir/rule
+.PHONY : server_node
+
+# fast build rule for target.
+server_node/fast:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/build
+.PHONY : server_node/fast
+
+# Convenience name for target.
 roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /root/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -331,36 +331,60 @@ std_msgs_generate_messages_py/fast:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/imu.o: src/imu.cpp.o
-.PHONY : src/imu.o
+src/link/robolink.o: src/link/robolink.cpp.o
+.PHONY : src/link/robolink.o
 
 # target to build an object file
-src/imu.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.o
-.PHONY : src/imu.cpp.o
+src/link/robolink.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/robolink.cpp.o
+.PHONY : src/link/robolink.cpp.o
 
-src/imu.i: src/imu.cpp.i
-.PHONY : src/imu.i
+src/link/robolink.i: src/link/robolink.cpp.i
+.PHONY : src/link/robolink.i
 
 # target to preprocess a source file
-src/imu.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.i
-.PHONY : src/imu.cpp.i
+src/link/robolink.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/robolink.cpp.i
+.PHONY : src/link/robolink.cpp.i
 
-src/imu.s: src/imu.cpp.s
-.PHONY : src/imu.s
+src/link/robolink.s: src/link/robolink.cpp.s
+.PHONY : src/link/robolink.s
 
 # target to generate assembly for a file
-src/imu.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/imu.cpp.s
-.PHONY : src/imu.cpp.s
+src/link/robolink.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/robolink.cpp.s
+.PHONY : src/link/robolink.cpp.s
+
+src/link/usb2serial.o: src/link/usb2serial.cpp.o
+.PHONY : src/link/usb2serial.o
+
+# target to build an object file
+src/link/usb2serial.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/usb2serial.cpp.o
+.PHONY : src/link/usb2serial.cpp.o
+
+src/link/usb2serial.i: src/link/usb2serial.cpp.i
+.PHONY : src/link/usb2serial.i
+
+# target to preprocess a source file
+src/link/usb2serial.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/usb2serial.cpp.i
+.PHONY : src/link/usb2serial.cpp.i
+
+src/link/usb2serial.s: src/link/usb2serial.cpp.s
+.PHONY : src/link/usb2serial.s
+
+# target to generate assembly for a file
+src/link/usb2serial.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/link/usb2serial.cpp.s
+.PHONY : src/link/usb2serial.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.o
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -368,7 +392,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.i
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -376,104 +400,104 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/main.cpp.s
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/motion.o: src/motion.cpp.o
-.PHONY : src/motion.o
+src/motion/motion.o: src/motion/motion.cpp.o
+.PHONY : src/motion/motion.o
 
 # target to build an object file
-src/motion.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.o
-.PHONY : src/motion.cpp.o
+src/motion/motion.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o
+.PHONY : src/motion/motion.cpp.o
 
-src/motion.i: src/motion.cpp.i
-.PHONY : src/motion.i
+src/motion/motion.i: src/motion/motion.cpp.i
+.PHONY : src/motion/motion.i
 
 # target to preprocess a source file
-src/motion.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.i
-.PHONY : src/motion.cpp.i
+src/motion/motion.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.i
+.PHONY : src/motion/motion.cpp.i
 
-src/motion.s: src/motion.cpp.s
-.PHONY : src/motion.s
+src/motion/motion.s: src/motion/motion.cpp.s
+.PHONY : src/motion/motion.s
 
 # target to generate assembly for a file
-src/motion.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/motion.cpp.s
-.PHONY : src/motion.cpp.s
+src/motion/motion.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.s
+.PHONY : src/motion/motion.cpp.s
 
-src/robolink.o: src/robolink.cpp.o
-.PHONY : src/robolink.o
+src/sensor/imu.o: src/sensor/imu.cpp.o
+.PHONY : src/sensor/imu.o
 
 # target to build an object file
-src/robolink.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.o
-.PHONY : src/robolink.cpp.o
+src/sensor/imu.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o
+.PHONY : src/sensor/imu.cpp.o
 
-src/robolink.i: src/robolink.cpp.i
-.PHONY : src/robolink.i
+src/sensor/imu.i: src/sensor/imu.cpp.i
+.PHONY : src/sensor/imu.i
 
 # target to preprocess a source file
-src/robolink.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.i
-.PHONY : src/robolink.cpp.i
+src/sensor/imu.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.i
+.PHONY : src/sensor/imu.cpp.i
 
-src/robolink.s: src/robolink.cpp.s
-.PHONY : src/robolink.s
+src/sensor/imu.s: src/sensor/imu.cpp.s
+.PHONY : src/sensor/imu.s
 
 # target to generate assembly for a file
-src/robolink.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robolink.cpp.s
-.PHONY : src/robolink.cpp.s
+src/sensor/imu.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.s
+.PHONY : src/sensor/imu.cpp.s
 
-src/robot.o: src/robot.cpp.o
-.PHONY : src/robot.o
+src/task/robot.o: src/task/robot.cpp.o
+.PHONY : src/task/robot.o
 
 # target to build an object file
-src/robot.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.o
-.PHONY : src/robot.cpp.o
+src/task/robot.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/robot.cpp.o
+.PHONY : src/task/robot.cpp.o
 
-src/robot.i: src/robot.cpp.i
-.PHONY : src/robot.i
+src/task/robot.i: src/task/robot.cpp.i
+.PHONY : src/task/robot.i
 
 # target to preprocess a source file
-src/robot.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.i
-.PHONY : src/robot.cpp.i
+src/task/robot.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/robot.cpp.i
+.PHONY : src/task/robot.cpp.i
 
-src/robot.s: src/robot.cpp.s
-.PHONY : src/robot.s
+src/task/robot.s: src/task/robot.cpp.s
+.PHONY : src/task/robot.s
 
 # target to generate assembly for a file
-src/robot.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/robot.cpp.s
-.PHONY : src/robot.cpp.s
+src/task/robot.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/robot.cpp.s
+.PHONY : src/task/robot.cpp.s
 
-src/usb2serial.o: src/usb2serial.cpp.o
-.PHONY : src/usb2serial.o
+src/task/task.o: src/task/task.cpp.o
+.PHONY : src/task/task.o
 
 # target to build an object file
-src/usb2serial.cpp.o:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.o
-.PHONY : src/usb2serial.cpp.o
+src/task/task.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/task.cpp.o
+.PHONY : src/task/task.cpp.o
 
-src/usb2serial.i: src/usb2serial.cpp.i
-.PHONY : src/usb2serial.i
+src/task/task.i: src/task/task.cpp.i
+.PHONY : src/task/task.i
 
 # target to preprocess a source file
-src/usb2serial.cpp.i:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.i
-.PHONY : src/usb2serial.cpp.i
+src/task/task.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/task.cpp.i
+.PHONY : src/task/task.cpp.i
 
-src/usb2serial.s: src/usb2serial.cpp.s
-.PHONY : src/usb2serial.s
+src/task/task.s: src/task/task.cpp.s
+.PHONY : src/task/task.s
 
 # target to generate assembly for a file
-src/usb2serial.cpp.s:
-	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/src/usb2serial.cpp.s
-.PHONY : src/usb2serial.cpp.s
+src/task/task.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/task/task.cpp.s
+.PHONY : src/task/task.cpp.s
 
 # Help Target
 help:
@@ -487,7 +511,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roboserver_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -496,29 +519,33 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... server_node"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... src/imu.o"
-	@echo "... src/imu.i"
-	@echo "... src/imu.s"
+	@echo "... src/link/robolink.o"
+	@echo "... src/link/robolink.i"
+	@echo "... src/link/robolink.s"
+	@echo "... src/link/usb2serial.o"
+	@echo "... src/link/usb2serial.i"
+	@echo "... src/link/usb2serial.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/motion.o"
-	@echo "... src/motion.i"
-	@echo "... src/motion.s"
-	@echo "... src/robolink.o"
-	@echo "... src/robolink.i"
-	@echo "... src/robolink.s"
-	@echo "... src/robot.o"
-	@echo "... src/robot.i"
-	@echo "... src/robot.s"
-	@echo "... src/usb2serial.o"
-	@echo "... src/usb2serial.i"
-	@echo "... src/usb2serial.s"
+	@echo "... src/motion/motion.o"
+	@echo "... src/motion/motion.i"
+	@echo "... src/motion/motion.s"
+	@echo "... src/sensor/imu.o"
+	@echo "... src/sensor/imu.i"
+	@echo "... src/sensor/imu.s"
+	@echo "... src/task/robot.o"
+	@echo "... src/task/robot.i"
+	@echo "... src/task/robot.s"
+	@echo "... src/task/task.o"
+	@echo "... src/task/task.i"
+	@echo "... src/task/task.s"
 .PHONY : help
 
 

@@ -423,19 +423,6 @@ run_tests_robot_upstart_roslint_package/fast:
 .PHONY : run_tests_robot_upstart_roslint_package/fast
 
 #=============================================================================
-# Target rules for targets named roboserver_node
-
-# Build rule for target.
-roboserver_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roboserver_node
-.PHONY : roboserver_node
-
-# fast build rule for target.
-roboserver_node/fast:
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/build
-.PHONY : roboserver_node/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -540,6 +527,19 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named server_node
+
+# Build rule for target.
+server_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server_node
+.PHONY : server_node
+
+# fast build rule for target.
+server_node/fast:
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/build
+.PHONY : server_node/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -625,7 +625,6 @@ help:
 	@echo "... run_tests_robot_upstart_nosetests_test"
 	@echo "... run_tests_robot_upstart_roslint"
 	@echo "... run_tests_robot_upstart_roslint_package"
-	@echo "... roboserver_node"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -634,6 +633,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... server_node"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"

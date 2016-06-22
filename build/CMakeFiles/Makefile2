@@ -596,8 +596,8 @@ clean: robot_upstart/CMakeFiles/roslint_robot_upstart.dir/clean
 # Target rules for target robot_upstart/CMakeFiles/run_tests_robot_upstart.dir
 
 # All Build rule for target.
-robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/all: robot_upstart/CMakeFiles/run_tests_robot_upstart_nosetests.dir/all
 robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/all: robot_upstart/CMakeFiles/run_tests_robot_upstart_roslint.dir/all
+robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/all: robot_upstart/CMakeFiles/run_tests_robot_upstart_nosetests.dir/all
 	$(MAKE) -f robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/build.make robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/depend
 	$(MAKE) -f robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/build.make robot_upstart/CMakeFiles/run_tests_robot_upstart.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles 
@@ -752,11 +752,10 @@ clean: robot_upstart/CMakeFiles/run_tests_robot_upstart_roslint_package.dir/clea
 # Directory level rules for directory roboserver
 
 # Convenience name for "all" pass in the directory.
-roboserver/all: roboserver/CMakeFiles/roboserver_node.dir/all
+roboserver/all: roboserver/CMakeFiles/server_node.dir/all
 .PHONY : roboserver/all
 
 # Convenience name for "clean" pass in the directory.
-roboserver/clean: roboserver/CMakeFiles/roboserver_node.dir/clean
 roboserver/clean: roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 roboserver/clean: roboserver/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 roboserver/clean: roboserver/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -765,6 +764,7 @@ roboserver/clean: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/
 roboserver/clean: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 roboserver/clean: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 roboserver/clean: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+roboserver/clean: roboserver/CMakeFiles/server_node.dir/clean
 roboserver/clean: roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 roboserver/clean: roboserver/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 roboserver/clean: roboserver/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
@@ -774,52 +774,6 @@ roboserver/clean: roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Convenience name for "preinstall" pass in the directory.
 roboserver/preinstall:
 .PHONY : roboserver/preinstall
-
-#=============================================================================
-# Target rules for target roboserver/CMakeFiles/roboserver_node.dir
-
-# All Build rule for target.
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_eus.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_py.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-roboserver/CMakeFiles/roboserver_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/depend
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles  3 4 5 6 7 8
-	@echo "Built target roboserver_node"
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/all
-
-# Include target in all.
-all: roboserver/CMakeFiles/roboserver_node.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-roboserver/CMakeFiles/roboserver_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ros_ws/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/roboserver_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ros_ws/build/CMakeFiles 0
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/rule
-
-# Convenience name for target.
-roboserver_node: roboserver/CMakeFiles/roboserver_node.dir/rule
-.PHONY : roboserver_node
-
-# clean rule for target.
-roboserver/CMakeFiles/roboserver_node.dir/clean:
-	$(MAKE) -f roboserver/CMakeFiles/roboserver_node.dir/build.make roboserver/CMakeFiles/roboserver_node.dir/clean
-.PHONY : roboserver/CMakeFiles/roboserver_node.dir/clean
-
-# clean rule for target.
-clean: roboserver/CMakeFiles/roboserver_node.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir
@@ -1067,6 +1021,52 @@ roboserver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target roboserver/CMakeFiles/server_node.dir
+
+# All Build rule for target.
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_eus.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/roscpp_generate_messages_py.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+roboserver/CMakeFiles/server_node.dir/all: roboserver/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/depend
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles  3 4 5 6 7 8 9
+	@echo "Built target server_node"
+.PHONY : roboserver/CMakeFiles/server_node.dir/all
+
+# Include target in all.
+all: roboserver/CMakeFiles/server_node.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+roboserver/CMakeFiles/server_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ros_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 roboserver/CMakeFiles/server_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ros_ws/build/CMakeFiles 0
+.PHONY : roboserver/CMakeFiles/server_node.dir/rule
+
+# Convenience name for target.
+server_node: roboserver/CMakeFiles/server_node.dir/rule
+.PHONY : server_node
+
+# clean rule for target.
+roboserver/CMakeFiles/server_node.dir/clean:
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/clean
+.PHONY : roboserver/CMakeFiles/server_node.dir/clean
+
+# clean rule for target.
+clean: roboserver/CMakeFiles/server_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
