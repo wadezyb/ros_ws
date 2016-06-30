@@ -7,10 +7,10 @@ project(roboserver)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
 )
-
+find_package(cmake_modules REQUIRED)
 ## System dependencies are found with CMake's conventions
 find_package(Boost REQUIRED COMPONENTS system)
-
+find_package(Eigen REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -114,7 +114,7 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-
+include_directories(${Eigen_INCLUDE_DIRS})
 ## Declare a C++ library
 # add_library(roboserver
 #   src/${PROJECT_NAME}/roboserver.cpp
@@ -126,7 +126,7 @@ include_directories(
 # add_dependencies(roboserver ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(server_node src/main.cpp src/task/task.cpp src/link/usb2serial.cpp src/link/robolink.cpp src/task/robot.cpp src/sensor/imu.cpp src/motion/motion.cpp)
+add_executable(server_node src/main.cpp src/task/task.cpp src/link/usb2serial.cpp src/link/robolink.cpp src/task/robot.cpp src/sensor/imu.cpp src/motion/motion.cpp src/robotics/robotics.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -135,6 +135,7 @@ add_dependencies(server_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORT
 ## Specify libraries to link a library or executable target against
 target_link_libraries(server_node
   ${catkin_LIBRARIES}
+  ${Eigen_LIBRARIES}
 )
 
 #############

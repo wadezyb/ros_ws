@@ -57,6 +57,7 @@ int serialPortInit(char *portName, int rate)
   if (*portName == '/')
   { // linux serial port names always begin with /dev
     fd = open(portName, O_RDWR | O_NOCTTY | O_NDELAY);
+    //printf("roboLinkd=%d\n",fd);
     if (fd == -1)
     {
       //Could not open the port.

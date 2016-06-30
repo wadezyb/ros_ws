@@ -3,6 +3,12 @@
 
 #include <queue>
 
+#define SERIAL_PORT ("/dev/ttyUSB0")
+#define ETHERNET_IP ("192.168.2.5")
+#define CLIENT_IP ("192.168.2.102")
+#define UDP_PORT (10102)
+#define TCP_PORT (10101)
+
 /* Command Index */
 #define ControlWordIndex (0)
 #define ModesofOperationIndex (1)
@@ -27,6 +33,9 @@
 #define IO_InputIndex (54)
 #define HeartBeatIndex (100)
 
+#define TCP_CMD_INDEX_SERVO_ON (1001)
+#define TCP_CMD_INDEX_RUN (1002)
+#define TCP_CMD_INDEX_SETZERO (1003)
 
 typedef struct
 {

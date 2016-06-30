@@ -8,6 +8,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/ros_ws/src/roboserver/src/link/usb2serial.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/link/usb2serial.cpp.o"
   "/root/ros_ws/src/roboserver/src/main.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/main.cpp.o"
   "/root/ros_ws/src/roboserver/src/motion/motion.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o"
+  "/root/ros_ws/src/roboserver/src/robotics/robotics.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o"
   "/root/ros_ws/src/roboserver/src/sensor/imu.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o"
   "/root/ros_ws/src/roboserver/src/task/robot.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/task/robot.cpp.o"
   "/root/ros_ws/src/roboserver/src/task/task.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/task/task.cpp.o"
@@ -28,6 +29,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/jade/include"
+  "/usr/include/eigen3"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

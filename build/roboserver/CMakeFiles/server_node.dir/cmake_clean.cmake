@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/server_node.dir/src/task/robot.cpp.o"
   "CMakeFiles/server_node.dir/src/sensor/imu.cpp.o"
   "CMakeFiles/server_node.dir/src/motion/motion.cpp.o"
+  "CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o"
   "/root/ros_ws/devel/lib/roboserver/server_node.pdb"
   "/root/ros_ws/devel/lib/roboserver/server_node"
 )

@@ -26,7 +26,7 @@ void startup(void)
 	printf("System is Starting...\n");
 
 	printf("Initializing Serial Port...\n");
-	if(roboLinkInit())
+	if(roboLinkInit()>0)
 	{
 		printf("RoboLink is Ready.\n");
 	}
@@ -38,6 +38,8 @@ void startup(void)
 	printf("UDP Server is Running!\n");
 	boost::thread tcp(&tcpServerTask);
 	printf("TCP Server is Running!\n");
+	boost::thread control(&roboControlLoop);
+	printf("Robot Control Loop is Running!!");
 }
 
 void debug(void)

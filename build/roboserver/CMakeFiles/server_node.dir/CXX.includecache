@@ -6,35 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/root/ros_ws/src/roboserver/src/link/robolink.cpp
-robolink.h
-/root/ros_ws/src/roboserver/src/link/robolink.h
-usb2serial.h
-/root/ros_ws/src/roboserver/src/link/usb2serial.h
-../task/robot.h
-/root/ros_ws/src/roboserver/src/task/robot.h
-signal.h
--
-sys/time.h
--
-stdio.h
--
-string.h
--
-stdlib.h
--
-arpa/inet.h
--
-sys/socket.h
--
-boost/thread/thread.hpp
--
-
-/root/ros_ws/src/roboserver/src/link/robolink.h
-queue
--
-
-/root/ros_ws/src/roboserver/src/link/usb2serial.h
-
-/root/ros_ws/src/roboserver/src/task/robot.h
-

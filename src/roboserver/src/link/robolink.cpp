@@ -16,21 +16,21 @@
 #include<sys/socket.h>
 #include <boost/thread/thread.hpp>
 
-#define BUFLEN 512  //Max length of buffer
-#define PORT 10102   //The port on which to listen for incoming data
-
 int roboLinkId;
 serialRxObj serialRx;
 canMsgObj canMsg;
 std::queue<sendMsgObj> sendMsgQueue;
 roboClientUdpObj clientData;
 
+
+/* Init Serial Port */
 int roboLinkInit(void)
 {
-	char port[]="/dev/ttyUSB0";
+	char port[]=SERIAL_PORT;
 	roboLinkId = serialPortInit(port,1500000);
 	if(roboLinkId>0)
 		timerInit();
+	//printf("roboLinkd=%d\n",roboLinkId);
 	return roboLinkId;
 }
 
@@ -127,9 +127,9 @@ void servoOff(void)
 }
 void servoHome(void)
 {
-	sendCAN(1,ModesofOperationIndex, 5);
-    sendCAN(2,ModesofOperationIndex, 5);
-    sendCAN(3,ModesofOperationIndex, 5);
+	sendCAN(1,ModesofOperationIndex, 6);
+    sendCAN(2,ModesofOperationIndex, 6);
+    sendCAN(3,ModesofOperationIndex, 6);
     sendCAN(1,ControlWordIndex, 1);
     sendCAN(2,ControlWordIndex, 1);
     sendCAN(3,ControlWordIndex, 1);
@@ -281,7 +281,7 @@ int udpServerTask(void)
     memset((char *) &si_me, 0, sizeof(si_me));
 
     si_me.sin_family = AF_INET;
-    si_me.sin_port = htons(PORT);
+    si_me.sin_port = htons(UDP_PORT);
     si_me.sin_addr.s_addr = htonl(INADDR_ANY);
 
     //bind socket to port
@@ -290,8 +290,8 @@ int udpServerTask(void)
         printf("bind");
     }
     si_other.sin_family = AF_INET;
-    si_other.sin_addr.s_addr = inet_addr("192.168.2.103");
-    si_other.sin_port = htons(PORT);
+    si_other.sin_addr.s_addr = inet_addr(CLIENT_IP);
+    si_other.sin_port = htons(UDP_PORT);
     //keep listening for data
     while(1)
     {
@@ -303,9 +303,8 @@ int udpServerTask(void)
     	}
     	sendto(s, &robot, sizeof(robotObj), 0, (struct sockaddr*) &si_other, slen);
 		//printf("%d\n",recv_len);
-		boost::this_thread::sleep(boost::posix_time::milliseconds(200));
+		//boost::this_thread::sleep(boost::posix_time::milliseconds(20));
     }
-
     return 0;
 }
 
@@ -314,7 +313,7 @@ int tcpServerTask(void)
     int socket_desc , client_sock , c , read_size;
     struct sockaddr_in server , client;
     char client_message[2000];
-
+    roboClientTcpObj tcp_msg;
     //Create socket
     socket_desc = socket(AF_INET , SOCK_STREAM , 0);
     if (socket_desc == -1)
@@ -326,7 +325,7 @@ int tcpServerTask(void)
     //Prepare the sockaddr_in structure
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons( 10101 );
+    server.sin_port = htons( TCP_PORT );
 
     //Bind
     if( bind(socket_desc,(struct sockaddr *)&server , sizeof(server)) < 0)
@@ -343,7 +342,7 @@ int tcpServerTask(void)
     while(1)
     {
 		//Accept and incoming connection
-		puts("Waiting for incoming connections...");
+		//puts("Waiting for incoming connections...");
 		c = sizeof(struct sockaddr_in);
 
 		//accept connection from an incoming client
@@ -353,19 +352,58 @@ int tcpServerTask(void)
 			perror("accept failed");
 			return 1;
 		}
-		puts("Connection accepted");
+		//puts("Connection accepted");
 
 		//Receive a message from client
 		while( (read_size = recv(client_sock , client_message , 2000 , 0)) > 0 )
 		{
 			//Send the message back to client
-			write(client_sock , client_message , strlen(client_message));
-			printf("tcp rx %d\n",read_size);
+			if(read_size == sizeof(roboClientTcpObj))
+			{
+				memcpy(&tcp_msg,client_message,sizeof(roboClientTcpObj));
+				switch(tcp_msg.index)
+				{
+				case TCP_CMD_INDEX_SERVO_ON:
+					robot.Controller.control = tcp_msg.value;
+					if(robot.Controller.control == 1)
+					{
+						printf("Servo On!\n");
+						servoOn();
+					}
+					else if(robot.Controller.control == 0)
+					{
+						printf("Servo Off!\n");
+						servoOff();
+					}
+					break;
+				case TCP_CMD_INDEX_RUN:
+					robot.Controller.run = tcp_msg.value;
+					if(robot.Controller.run == 1)
+					{
+						printf("Run!\n");
+					}
+					else if(TCP_CMD_INDEX_RUN,robot.Controller.run == 0)
+					{
+						printf("Stop!\n");
+					}
+					break;
+				case TCP_CMD_INDEX_SETZERO:
+					printf("Set Zero!\n");
+
+					break;
+				default:
+					printf("TCP CMD Not Known!!\n");
+					break;
+				}
+				//memcpy(client_message,&tcp_msg,sizeof(roboClientTcpObj));
+				write(client_sock , client_message , read_size);
+			}
+			printf("TCP rx %d\n",read_size);
 		}
 
 		if(read_size == 0)
 		{
-			puts("Client disconnected");
+			//puts("Client disconnected");
 			fflush(stdout);
 		}
 		else if(read_size == -1)
@@ -373,7 +411,5 @@ int tcpServerTask(void)
 			perror("recv failed");
 		}
     }
-
-
     return 0;
 }

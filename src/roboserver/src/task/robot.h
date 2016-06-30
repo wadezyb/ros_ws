@@ -8,11 +8,15 @@ typedef struct
 	char io_input;
 	int encoder;
 	char temperature;
+	char status;// On-1 Off-0
+	int encoder_zero_ref;
 }robotAxisObj;
 
 typedef struct
 {
-	int status;
+	char status;// Off-0 On-1 Error-2
+	char control;// Servo On-1 Servo Off-0
+	char run;
 }robotControllerObj;
 
 typedef struct

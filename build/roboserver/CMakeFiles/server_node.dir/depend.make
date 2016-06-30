@@ -17,6 +17,9 @@ roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o: /root/ros_ws/src/
 roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion/motion.cpp
 roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o: /root/ros_ws/src/roboserver/src/motion/motion.h
 
+roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o: /root/ros_ws/src/roboserver/src/robotics/robotics.cpp
+roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o: /root/ros_ws/src/roboserver/src/robotics/robotics.h
+
 roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o: /root/ros_ws/src/roboserver/src/link/usb2serial.h
 roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o: /root/ros_ws/src/roboserver/src/sensor/imu.cpp
 roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o: /root/ros_ws/src/roboserver/src/sensor/imu.h

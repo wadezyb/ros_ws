@@ -427,6 +427,30 @@ src/motion/motion.cpp.s:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.s
 .PHONY : src/motion/motion.cpp.s
 
+src/robotics/robotics.o: src/robotics/robotics.cpp.o
+.PHONY : src/robotics/robotics.o
+
+# target to build an object file
+src/robotics/robotics.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o
+.PHONY : src/robotics/robotics.cpp.o
+
+src/robotics/robotics.i: src/robotics/robotics.cpp.i
+.PHONY : src/robotics/robotics.i
+
+# target to preprocess a source file
+src/robotics/robotics.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.i
+.PHONY : src/robotics/robotics.cpp.i
+
+src/robotics/robotics.s: src/robotics/robotics.cpp.s
+.PHONY : src/robotics/robotics.s
+
+# target to generate assembly for a file
+src/robotics/robotics.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.s
+.PHONY : src/robotics/robotics.cpp.s
+
 src/sensor/imu.o: src/sensor/imu.cpp.o
 .PHONY : src/sensor/imu.o
 
@@ -537,6 +561,9 @@ help:
 	@echo "... src/motion/motion.o"
 	@echo "... src/motion/motion.i"
 	@echo "... src/motion/motion.s"
+	@echo "... src/robotics/robotics.o"
+	@echo "... src/robotics/robotics.i"
+	@echo "... src/robotics/robotics.s"
 	@echo "... src/sensor/imu.o"
 	@echo "... src/sensor/imu.i"
 	@echo "... src/sensor/imu.s"
