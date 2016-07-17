@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "../link/robolink.h"
 #include "robot.h"
+#include "../motion/triangle.h"
 
 void task_management_process(void)
 {
@@ -40,6 +41,7 @@ void startup(void)
 	printf("TCP Server is Running!\n");
 	boost::thread control(&roboControlLoop);
 	printf("Robot Control Loop is Running!!");
+	triZero();
 }
 
 void debug(void)

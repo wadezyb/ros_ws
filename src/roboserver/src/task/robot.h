@@ -17,6 +17,7 @@ typedef struct
 	char status;// Off-0 On-1 Error-2
 	char control;// Servo On-1 Servo Off-0
 	char run;
+	char breakon;
 }robotControllerObj;
 
 typedef struct

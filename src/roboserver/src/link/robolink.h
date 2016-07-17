@@ -24,6 +24,7 @@
 #define ProfileVelocityIndex (11)
 #define InterpolatedPositionIndex (12)
 #define InterpolationTimeIndex (13)
+#define IO_OUT_Index (14)
 
 /* Status Index */
 #define StatusWordIndex (50)
@@ -36,6 +37,9 @@
 #define TCP_CMD_INDEX_SERVO_ON (1001)
 #define TCP_CMD_INDEX_RUN (1002)
 #define TCP_CMD_INDEX_SETZERO (1003)
+#define TCP_CMD_INDEX_BREAK (1004)
+#define TCP_CMD_INDEX_DEMO (1005)
+
 
 typedef struct
 {
@@ -90,4 +94,7 @@ void servoHome(void);
 int udpServerTask(void);
 int serialPortManagementTask(void);
 int tcpServerTask(void);
+void breakOff(void);
+void breakOn(void);
+void stopMotion(void);
 #endif

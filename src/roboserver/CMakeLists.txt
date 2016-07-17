@@ -126,7 +126,9 @@ include_directories(${Eigen_INCLUDE_DIRS})
 # add_dependencies(roboserver ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(server_node src/main.cpp src/task/task.cpp src/link/usb2serial.cpp src/link/robolink.cpp src/task/robot.cpp src/sensor/imu.cpp src/motion/motion.cpp src/robotics/robotics.cpp)
+add_executable(server_node src/main.cpp src/task/task.cpp src/link/usb2serial.cpp src/link/robolink.cpp 
+src/task/robot.cpp src/sensor/imu.cpp src/motion/motion.cpp src/robotics/robotics.cpp src/motion/triangle.cpp
+src/file/file.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above

@@ -233,6 +233,52 @@ roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o.provides: robo
 
 roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o.provides.build: roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o
 
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o: roboserver/CMakeFiles/server_node.dir/flags.make
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o: /root/ros_ws/src/roboserver/src/motion/triangle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server_node.dir/src/motion/triangle.cpp.o -c /root/ros_ws/src/roboserver/src/motion/triangle.cpp
+
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_node.dir/src/motion/triangle.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/motion/triangle.cpp > CMakeFiles/server_node.dir/src/motion/triangle.cpp.i
+
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_node.dir/src/motion/triangle.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/motion/triangle.cpp -o CMakeFiles/server_node.dir/src/motion/triangle.cpp.s
+
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.requires
+
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.provides: roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.provides
+
+roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.provides.build: roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o: roboserver/CMakeFiles/server_node.dir/flags.make
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o: /root/ros_ws/src/roboserver/src/file/file.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server_node.dir/src/file/file.cpp.o -c /root/ros_ws/src/roboserver/src/file/file.cpp
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_node.dir/src/file/file.cpp.i"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/ros_ws/src/roboserver/src/file/file.cpp > CMakeFiles/server_node.dir/src/file/file.cpp.i
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_node.dir/src/file/file.cpp.s"
+	cd /root/ros_ws/build/roboserver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/ros_ws/src/roboserver/src/file/file.cpp -o CMakeFiles/server_node.dir/src/file/file.cpp.s
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.requires:
+.PHONY : roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.requires
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.provides: roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.requires
+	$(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.provides.build
+.PHONY : roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.provides
+
+roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.provides.build: roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o
+
 # Object files for target server_node
 server_node_OBJECTS = \
 "CMakeFiles/server_node.dir/src/main.cpp.o" \
@@ -242,7 +288,9 @@ server_node_OBJECTS = \
 "CMakeFiles/server_node.dir/src/task/robot.cpp.o" \
 "CMakeFiles/server_node.dir/src/sensor/imu.cpp.o" \
 "CMakeFiles/server_node.dir/src/motion/motion.cpp.o" \
-"CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o"
+"CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o" \
+"CMakeFiles/server_node.dir/src/motion/triangle.cpp.o" \
+"CMakeFiles/server_node.dir/src/file/file.cpp.o"
 
 # External object files for target server_node
 server_node_EXTERNAL_OBJECTS =
@@ -255,6 +303,8 @@ server_node_EXTERNAL_OBJECTS =
 /root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o
 /root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o
 /root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o
+/root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o
+/root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o
 /root/ros_ws/devel/lib/roboserver/server_node: roboserver/CMakeFiles/server_node.dir/build.make
 /root/ros_ws/devel/lib/roboserver/server_node: /opt/ros/jade/lib/libroscpp.so
 /root/ros_ws/devel/lib/roboserver/server_node: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
@@ -289,6 +339,8 @@ roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_nod
 roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o.requires
 roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o.requires
 roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o.requires
+roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o.requires
+roboserver/CMakeFiles/server_node.dir/requires: roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o.requires
 .PHONY : roboserver/CMakeFiles/server_node.dir/requires
 
 roboserver/CMakeFiles/server_node.dir/clean:

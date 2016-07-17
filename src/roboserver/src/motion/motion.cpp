@@ -195,6 +195,5 @@ void motion_task(void)
 		}
 		boost::this_thread::sleep(boost::posix_time::milliseconds(3000));
 	}
-
 }
 

@@ -331,6 +331,30 @@ std_msgs_generate_messages_py/fast:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build.make roboserver/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/file/file.o: src/file/file.cpp.o
+.PHONY : src/file/file.o
+
+# target to build an object file
+src/file/file.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o
+.PHONY : src/file/file.cpp.o
+
+src/file/file.i: src/file/file.cpp.i
+.PHONY : src/file/file.i
+
+# target to preprocess a source file
+src/file/file.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.i
+.PHONY : src/file/file.cpp.i
+
+src/file/file.s: src/file/file.cpp.s
+.PHONY : src/file/file.s
+
+# target to generate assembly for a file
+src/file/file.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.s
+.PHONY : src/file/file.cpp.s
+
 src/link/robolink.o: src/link/robolink.cpp.o
 .PHONY : src/link/robolink.o
 
@@ -426,6 +450,30 @@ src/motion/motion.s: src/motion/motion.cpp.s
 src/motion/motion.cpp.s:
 	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.s
 .PHONY : src/motion/motion.cpp.s
+
+src/motion/triangle.o: src/motion/triangle.cpp.o
+.PHONY : src/motion/triangle.o
+
+# target to build an object file
+src/motion/triangle.cpp.o:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o
+.PHONY : src/motion/triangle.cpp.o
+
+src/motion/triangle.i: src/motion/triangle.cpp.i
+.PHONY : src/motion/triangle.i
+
+# target to preprocess a source file
+src/motion/triangle.cpp.i:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.i
+.PHONY : src/motion/triangle.cpp.i
+
+src/motion/triangle.s: src/motion/triangle.cpp.s
+.PHONY : src/motion/triangle.s
+
+# target to generate assembly for a file
+src/motion/triangle.cpp.s:
+	cd /root/ros_ws/build && $(MAKE) -f roboserver/CMakeFiles/server_node.dir/build.make roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.s
+.PHONY : src/motion/triangle.cpp.s
 
 src/robotics/robotics.o: src/robotics/robotics.cpp.o
 .PHONY : src/robotics/robotics.o
@@ -549,6 +597,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/file/file.o"
+	@echo "... src/file/file.i"
+	@echo "... src/file/file.s"
 	@echo "... src/link/robolink.o"
 	@echo "... src/link/robolink.i"
 	@echo "... src/link/robolink.s"
@@ -561,6 +612,9 @@ help:
 	@echo "... src/motion/motion.o"
 	@echo "... src/motion/motion.i"
 	@echo "... src/motion/motion.s"
+	@echo "... src/motion/triangle.o"
+	@echo "... src/motion/triangle.i"
+	@echo "... src/motion/triangle.s"
 	@echo "... src/robotics/robotics.o"
 	@echo "... src/robotics/robotics.i"
 	@echo "... src/robotics/robotics.s"

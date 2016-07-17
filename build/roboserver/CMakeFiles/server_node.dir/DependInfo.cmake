@@ -4,10 +4,12 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/root/ros_ws/src/roboserver/src/file/file.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/file/file.cpp.o"
   "/root/ros_ws/src/roboserver/src/link/robolink.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/link/robolink.cpp.o"
   "/root/ros_ws/src/roboserver/src/link/usb2serial.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/link/usb2serial.cpp.o"
   "/root/ros_ws/src/roboserver/src/main.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/main.cpp.o"
   "/root/ros_ws/src/roboserver/src/motion/motion.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/motion/motion.cpp.o"
+  "/root/ros_ws/src/roboserver/src/motion/triangle.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/motion/triangle.cpp.o"
   "/root/ros_ws/src/roboserver/src/robotics/robotics.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/robotics/robotics.cpp.o"
   "/root/ros_ws/src/roboserver/src/sensor/imu.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/sensor/imu.cpp.o"
   "/root/ros_ws/src/roboserver/src/task/robot.cpp" "/root/ros_ws/build/roboserver/CMakeFiles/server_node.dir/src/task/robot.cpp.o"

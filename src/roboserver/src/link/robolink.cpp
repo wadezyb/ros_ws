@@ -15,6 +15,8 @@
 #include<arpa/inet.h>
 #include<sys/socket.h>
 #include <boost/thread/thread.hpp>
+#include "../motion/triangle.h"
+#include "../file/file.h"
 
 int roboLinkId;
 serialRxObj serialRx;
@@ -111,9 +113,16 @@ void sendData(void)
 
 void servoOn(void)
 {
-    sendCAN(1,ModesofOperationIndex, 4);
-    sendCAN(2,ModesofOperationIndex, 4);
-    sendCAN(3,ModesofOperationIndex, 4);
+	/* Set Interpolation Time to 1ms */
+	sendCAN(1,InterpolationTimeIndex, 1);
+	sendCAN(2,InterpolationTimeIndex, 1);
+	sendCAN(3,InterpolationTimeIndex, 1);
+
+	/* Set Mode of Operation to Interpolation Mode */
+	sendCAN(1,ModesofOperationIndex, 5);
+	sendCAN(2,ModesofOperationIndex, 5);
+	sendCAN(3,ModesofOperationIndex, 5);
+
     sendCAN(1,ControlWordIndex, 1);
     sendCAN(2,ControlWordIndex, 1);
     sendCAN(3,ControlWordIndex, 1);
@@ -135,6 +144,28 @@ void servoHome(void)
     sendCAN(3,ControlWordIndex, 1);
 }
 
+void breakOff(void)
+{
+	sendCAN(1,IO_OUT_Index, 2);
+	sendCAN(2,IO_OUT_Index, 2);
+	sendCAN(3,IO_OUT_Index, 2);
+}
+
+void breakOn(void)
+{
+	sendCAN(1,IO_OUT_Index, 0);
+	sendCAN(2,IO_OUT_Index, 0);
+	sendCAN(3,IO_OUT_Index, 0);
+}
+
+void stopMotion(void)
+{
+	if(!sendMsgQueue.empty())
+	{
+		//sendCANMsg(sendMsgQueue.front());
+		sendMsgQueue.pop();
+	}
+}
 
 int sendBufSize(void)
 {
@@ -381,6 +412,9 @@ int tcpServerTask(void)
 					if(robot.Controller.run == 1)
 					{
 						printf("Run!\n");
+						//triangleMoveTest();
+						//fileRun();
+						triangleMoveEach();
 					}
 					else if(TCP_CMD_INDEX_RUN,robot.Controller.run == 0)
 					{
@@ -389,7 +423,18 @@ int tcpServerTask(void)
 					break;
 				case TCP_CMD_INDEX_SETZERO:
 					printf("Set Zero!\n");
+					triZero();
+					break;
+				case TCP_CMD_INDEX_BREAK:
+					robot.Controller.breakon = tcp_msg.value;
+					if(robot.Controller.breakon)
+						breakOn();
+					else
+						breakOff();
+					break;
 
+				case TCP_CMD_INDEX_DEMO:
+					fileRun();
 					break;
 				default:
 					printf("TCP CMD Not Known!!\n");
